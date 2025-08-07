@@ -43,7 +43,7 @@ app.get("/getAllLinks", async (req, res) => {
     const userData = decoded.isUserExists;
 
     const userDb = await Users.findById(userData?._id);
-    console.log('userDb: ',userDb)
+    console.log("userDb: ", userDb);
 
     console.log("authToken getAllLinks: ", authToken);
     console.log("decoded getAllLinks: ", decoded);

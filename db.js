@@ -1,10 +1,10 @@
 //all the DB settings will go here
 
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-const URI =
-  process.env.MONGO_URI ??
-  "mongodb+srv://aggarwalrudransh:KB9scBKgDxpwH6r3@cluster0.uzyhncf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const URI = process.env.MONGO_URI;
 console.log("URI: ", URI);
 
 const dbConnect = async () => {
